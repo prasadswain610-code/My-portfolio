@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Prasad</span><br> From India</h1>
+        </div>
+    </div>
+</div>
+<!---------about---------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"I'm Prasad — built on maths, shaped by science, now driven by technology. Chemistry at Berhampur University sharpened how I think. Full stack web development is how I create. I don't just study the world — I build it."</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                     <ul>
+                         <li><span>2026 - Present</span><br>Tech Internship — Full Stack Web Development</li>
+                         <li><span>2025 - 2026</span><br>Self-learning — Tailwind CSS, Git, Web Dev basics</li>
+                    </ul>
+                    <ul>
+                         <li><span>Web Development</span><br>HTML, CSS, Tailwind CSS, JavaScript</li>
+                         <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                         <li><span>Tools</span><br>Git, GitHub, VS Code</li>
+                         <li><span>Chemistry</span><br>Analytical thinking, lab research, problem solving</li>
+                    </ul>   
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2026</span><br>Web Development — Self-taught & Internship training</li>
+                        <li><span>2024 - Present</span><br>B.Sc. Chemistry — Berhampur University</li>
+                        <li><span>2022 - 2024</span><br>Completed Class 12 with ranking in the Top 3 students</li>
+                        <li><span>2022</span><br>Secured 1st position in Class 10</li>
+                        
+                    </ul>
+                </div>
+        </div>
+</div>
+
+<!--------------services-------------->
+<div id="services">
+  <div class="container">
+        <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I build websites that are clean, responsive, and built with attention to detail.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>I create intuitive and engaging user interfaces that provide seamless experiences.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fas fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>I design intuitive and engaging mobile applications.</p>
+            <a href="#">Learn more</a>
+        </div>    
+    </div>        
+        
+  </div>
+</div>
+
+<!-----------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png.webp" alt="work1">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>A modern social platform with posts, likes, and real-time chat features.
+                        Download it from play store</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png.png" alt="work2">
+                <div class="layer">
+                    <h3>UI/UX App</h3>
+                    <p>A modern UI/UX design platform with intuitive interfaces and seamless user experiences.
+                       
+                        Download it from play store</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png.jpg" alt="work3">
+                <div class="layer">
+                    <h3>Web Design App</h3>
+                    <p>A modern web design platform with responsive layouts and intuitive user interfaces.
+                    
+                    
+                     Download it from play store</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!----------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="#" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button> 
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © 2026 prasad. Made with <i class="fas fa-heart"></i> by sciny ltd.</p>
+    </div>
+</div>
+
+<script>
+    function opentab(tabname){
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }   
+</script> 
+
+<script>
+   
+   var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbwRyFH-jyOWAiHCS4HoQytheLiQOw5yyaZm2q5KfwCYgFGGTpt-J9TJaCl52MVIp1jT/exec'
+	const form = document.forms['submit-to-google-sheet']
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => console.log('Success!', response))
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+</html>
